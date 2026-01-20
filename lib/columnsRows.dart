@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class ColumnRowPage extends StatelessWidget {
@@ -12,57 +14,35 @@ class ColumnRowPage extends StatelessWidget {
       children: [
         Expanded(
           flex: 2,
-          child: Container(
-            height: double.infinity,
-            color: Colors.red,
-          ),
+          child: Container(color: Colors.red),
         ),
         Expanded(
           flex: 2,
-          child: Container(
-            height: double.infinity,
-            color: Colors.orange,
-          ),
+          child: Container(color: Colors.orange),
         ),
         Expanded(
           flex: 2,
-          child: Container(
-            height: double.infinity,
-            color: Colors.yellow,
-          ),
+          child: Container(color: Colors.yellow),
         ),
         Expanded(
           flex: 2,
-          child: Container(
-            height: double.infinity,
-            color: Colors.green,
-          ),
+          child: Container(color: Colors.green),
         ),
         Expanded(
           flex: 2,
           child: Column(
             children: [
-              Container(height: 180.5, color: Colors.red),
-              Container(height: 180.5, color: Colors.orange),
-              Container(height: 180.5, color: Colors.yellow),
-              Container(height: 180.5, color: Colors.greenAccent),
+              Expanded(child: Container(color: Colors.red)),
+              Expanded(child: Container(color: Colors.orange)),
+              Expanded(child: Container(color: Colors.yellow)),
+              Expanded(child: Container(color: Colors.greenAccent)),
               Row(
                 children: [
-                  Expanded(child:
-                  Container(height: 192, color: Colors.red)
-                  ),
-                  Expanded(child:
-                  Container(height: 192, color: Colors.orange)
-                  ),
-                  Expanded(child:
-                  Container(height: 192, color: Colors.yellow)
-                  ),
-                  Expanded(child:
-                  Container(height: 192, color: Colors.green)
-                  ),
-                  Expanded(child:
-                  Container(height: 192, color: Colors.blue)
-                  ),
+                  Expanded(child: Container(height: 192, color: Colors.red)),
+                  Expanded(child: Container(height: 192, color: Colors.orange)),
+                  Expanded(child: Container(height: 192, color: Colors.yellow)),
+                  Expanded(child: Container(height: 192, color: Colors.green)),
+                  Expanded(child: Container(height: 192, color: Colors.blue)),
                 ],
               ),
             ],
