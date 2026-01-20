@@ -48,11 +48,21 @@ class ColumnRowPage extends StatelessWidget {
               Container(height: 180.5, color: Colors.greenAccent),
               Row(
                 children: [
-                  Container(width: MediaQuery.of(context).size.width*0.04, height: 192, color: Colors.red),
-                  Container(width: MediaQuery.of(context).size.width*0.04, height: 192, color: Colors.orange),
-                  Container(width: MediaQuery.of(context).size.width*0.04, height: 192, color: Colors.yellow),
-                  Container(width: MediaQuery.of(context).size.width*0.04, height: 192, color: Colors.green),
-                  Container(width: MediaQuery.of(context).size.width*0.04, height: 192, color: Colors.blue),
+                  Expanded(child:
+                  Container(height: 192, color: Colors.red)
+                  ),
+                  Expanded(child:
+                  Container(height: 192, color: Colors.orange)
+                  ),
+                  Expanded(child:
+                  Container(height: 192, color: Colors.yellow)
+                  ),
+                  Expanded(child:
+                  Container(height: 192, color: Colors.green)
+                  ),
+                  Expanded(child:
+                  Container(height: 192, color: Colors.blue)
+                  ),
                 ],
               ),
             ],
